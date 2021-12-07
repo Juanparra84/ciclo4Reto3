@@ -39,4 +39,8 @@ public class OrderRepositorio {
         return interfaceorder.findTopByOrderByIdDesc();
     }
 
+
+    public List<Order> findByZone(String zone) {
+        return interfaceorder.findByZone(zone);
+    }
 }

@@ -9,7 +9,7 @@ import java.util.Optional;
 
 public interface InterfaceOrder extends MongoRepository <Order,Integer> {
     @Query("{'salesMan.zone': ?0}")
-    List<Order> findByZone(final String country);
+    List<Order> findByZone(final String zone);
 
     @Query("{status: ?0}")
     List<Order> findByStatus(final String status);
